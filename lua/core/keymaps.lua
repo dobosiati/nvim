@@ -7,7 +7,7 @@ vim.g.maplocalleader = ","
 
 -- General
 map("n", "<leader>s", ":w<CR>", opts)        -- Save
-map("n", "<leader>bd", ":q<CR>", opts)        -- Buffer delete
+map("n", "<leader>q", ":bd<CR>", opts)        -- Buffer delete
 map("n", "<leader>h", ":nohlsearch<CR>", opts) -- Clear search highlight
 map("n", "<leader>c", ":close<CR>", opts)    -- Close current split
 map("n", "<Esc>", "<cmd>noh<CR>", opts)      -- Escape clears highlight
