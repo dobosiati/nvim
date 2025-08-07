@@ -13,3 +13,4 @@ Install lazygit:
 ```
 sudo apt install lazygit
 ```
+
