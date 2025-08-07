@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 -- General
-map("n", "<leader>w", ":w<CR>", opts)        -- Save
+map("n", "<leader>s", ":w<CR>", opts)        -- Save
 map("n", "<leader>q", ":q<CR>", opts)        -- Quit
 map("n", "<leader>h", ":nohlsearch<CR>", opts) -- Clear search highlight
 map("n", "<leader>c", ":close<CR>", opts)    -- Close current split
@@ -53,3 +53,5 @@ map("n", "[d", vim.diagnostic.goto_prev, opts)
 map("n", "]d", vim.diagnostic.goto_next, opts)
 map("n", "<leader>dl", vim.diagnostic.setloclist, opts)
 
+-- Select word
+map("n", "<leader>w", "viw", opts)
