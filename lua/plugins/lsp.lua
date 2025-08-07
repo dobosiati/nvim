@@ -18,6 +18,7 @@ return {
           "bashls",
           "intelephense",     -- PHP LSP for Laravel
           "emmet_ls",         -- Optional: HTML class completion
+          "tailwindcss",
         },
         automatic_installation = true,
       })
@@ -47,6 +48,7 @@ return {
         "bashls",
         "intelephense",
         "emmet_ls",
+        "tailwindcss",
       }
       for _, server in ipairs(servers) do
         lspconfig[server].setup({
