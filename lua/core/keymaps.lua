@@ -46,7 +46,7 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)        -- File explorer
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts) -- Find files
 map("n", "<leader>fg", ":Telescope live_grep<CR>", opts)  -- Grep
 map("n", "<leader>fb", ":Telescope buffers<CR>", opts)    -- List buffers
-map("n", "<leader>fo", ":Telescope oldfiles<CR>", opts)    -- List buffers
+map("n", "<leader>fo", function() require("telescope.builtin").oldfiles({ only_cwd = true }) end, opts)    -- List buffers
 map("n", "<leader>gs", ":LazyGit<CR>", opts)              -- LazyGit
 
 -- Diagnostics (LSP)

@@ -60,7 +60,7 @@ return {
       lspconfig.emmet_ls.setup({
         on_attach = on_attach,
         capabilities = capabilities,
-        filetypes = { "html", "blade", "php" },
+        filetypes = { "html", "blade", "php", "vue", "js" },
       })
     end,
   },
