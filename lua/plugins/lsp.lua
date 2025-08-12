@@ -12,6 +12,7 @@ return {
         ensure_installed = {
           "lua_ls",
           "ts_ls",
+          "vtsls",
           "html",
           "cssls",
           "jsonls",
@@ -42,6 +43,7 @@ return {
       local servers = {
         "lua_ls",
         "ts_ls",
+        "vtsls",
         "html",
         "cssls",
         "jsonls",
